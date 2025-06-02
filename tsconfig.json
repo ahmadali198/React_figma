@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Specify the ECMAScript target version for compiled JavaScript
+    "module": "ESNext", // Specify the module code generation style
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Libraries to include in the compilation
+    "jsx": "react-jsx", // Use the new React 17+ JSX transform
+    "baseUrl": ".", // Base directory for resolving non-relative module imports
+    "paths": {
+      "@/*": ["./src/*"] // Alias for importing modules from the 'src' directory
+    },
+    "esModuleInterop": true, // Enables `import d from 'cjs'` for CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Flag for implicitly typed 'any' variables
+    "strictNullChecks": true, // Enable strict null checks for better type safety (recommended)
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "skipLibCheck": true, // Skip type checking of declaration files (faster builds)
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "resolveJsonModule": true, // Allow importing .json files
+    "moduleResolution": "bundler", // Or "node" depending on your setup, "bundler" is common for Vite
+    "isolatedModules": true, // Ensure that each file can be safely transpiled without relying on other files
+    "noEmit": true // Do not emit output (Vite handles bundling)
+  },
+  "include": ["src", "vite.config.ts"], // Files to include in the compilation
+  "references": [
+    { "path": "./tsconfig.node.json" } // Reference to your node-specific tsconfig
+  ]
+}
