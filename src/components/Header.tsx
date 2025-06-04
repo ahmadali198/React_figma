@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
   },); // Corrected empty dependency array ensures this runs only once on mount
 
   return (
-    <header className="bg-white border-b border-gray-200 px-4 py-4 flex items-center justify-between sm:px-6"> {/* Adjusted padding */}
+    <header className="bg-white border-b border-gray-200 px-4 py-4 flex items-center justify-between sm:px-6 sticky top-0 z-40 md:ml-20"> {/* Adjusted padding */}
       {/* Mobile Menu Button - visible only on small screens */}
       <button
         className="md:hidden p-2 text-gray-500 hover:text-gray-700 transition-colors"
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
 
       {/* Welcome message section - now always visible in header */}
       <div className="flex-grow text-center sm:text-left"> {/* Center on mobile, left on sm+ */}
-        <h1 className="text-xl font-semibold text-gray-900">Welcome Osman</h1>
+        <h1 className="text-xl font-semibold text-gray-900">Welcome <span className="text-gray-500">Osman </span> </h1>
       </div>
 
       {/* Notification bell and profile picture section */}
