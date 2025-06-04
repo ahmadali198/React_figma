@@ -8,7 +8,7 @@ import ProductCard from '@/components/ProductCard';
 import IntegrationCard from '@/components/IntegrationCard';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
-const Index = () => {
+const  Index = () => {
   const features = [
     
     {
@@ -61,7 +61,7 @@ const Index = () => {
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Connections</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* WhatsApp Connection - Green */}
-              <div className="bg-white border-2 border-green-300 rounded-lg sm-12 p-4">
+              <div className="bg-white border-2 border-[#3AC96D] rounded-lg sm-12 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center">
@@ -77,7 +77,7 @@ const Index = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="border-t border-green-200 pt-3">
+                <div className="border-t border-[#F8A74C] pt-3">
                   <button className="text-green-600 text-sm font-medium hover:text-green-700">
                     View Connection
                   </button>
@@ -85,7 +85,7 @@ const Index = () => {
               </div>
 
               {/* Star Force Connection - Green */}
-              <div className="bg-white border-2 border-green-300 rounded-lg sm-12 p-4">
+              <div className="bg-white border-2 border-[#3AC96D] rounded-lg p-4 sm-12">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@ const Index = () => {
 
                   </div>
                 </div>
-                <div className="border-t border-green-200 pt-3">
+                <div className="border-t border-[#F8A74C] pt-3">
                   <button className="text-green-600 text-sm font-medium hover:text-green-700">
                     View Connection
                   </button>
@@ -122,7 +122,7 @@ const Index = () => {
               </div>
 
               {/* Black App Connection - Orange */}
-              <div className="bg-white border-2 border-green-300 rounded-lg sm-12 p-4">
+              <div className="bg-white border-2 border-[#3AC96D] rounded-lg sm-12 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +148,7 @@ const Index = () => {
 
                   </div>
                
-                <div className="border-t border-orange-200 pt-3">
+                <div className="border-t border-[#F8A74C] pt-3">
                   <button className="text-orange-600 text-sm font-medium hover:text-orange-700">
                     View Connection
                   </button>
@@ -231,7 +231,7 @@ const Index = () => {
 
   
 {/* Product cards - Mobile version (grid layout) */}
-<div className="md:hidden grid grid-cols-1 gap-4 mb-6">
+<div className="md:hidden grid grid-cols-1 gap-4 mb-6" style={{ border: '1px solid #CFD3D8' }}>
   <ProductCard color="bg-[#FFE8B6]" className="w-full">
       {/* Empty first card */}
   </ProductCard>
@@ -244,13 +244,17 @@ const Index = () => {
   <ProductCard color="bg-[#DFD7FF]" className="w-full">
       {/* Empty fourth card */}
   </ProductCard>
+
+  <ProductCard color="bg-[#DFD7FF]" className="w-full">
+      {/* Empty fourth card */}
+  </ProductCard>
   <ProductCard color="bg-[#4931A7]" className="w-full">
       {/* Empty fifth card */}
   </ProductCard>
 </div>
 
 {/* Product cards - Desktop version (grid layout) */}
-<div className="hidden md:grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+<div className="hidden md:grid grid-cols-2 md:grid-cols-5 gap-4 mb-6"style={{ border: '1px solid #CFD3D8',paddingTop:'0px'}}>
   <ProductCard color="bg-[#FFE8B6]">
       {/* Empty first card */}
   </ProductCard>
