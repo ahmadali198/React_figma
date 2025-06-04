@@ -88,8 +88,7 @@ const Index = () => {
               <div className="bg-white border-2 border-green-300 rounded-lg sm-12 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2312_740)">
 <path d="M21.4067 24H2.59333C1.16109 24 0 22.8389 0 21.4067V2.59333C0 1.16109 1.16109 0 2.59333 0H21.4066C22.8389 0 24 1.16109 24 2.59333V21.4066C24 22.8389 22.8389 24 21.4067 24Z" fill="black"/>
 <path d="M21.4067 24H2.59333C1.16109 24 0 22.8389 0 21.4067V2.59333C0 1.16109 1.16109 0 2.59333 0H21.4066C22.8389 0 24 1.16109 24 2.59333V21.4066C24 22.8389 22.8389 24 21.4067 24Z" fill="black"/>
@@ -102,15 +101,16 @@ const Index = () => {
 </defs>
 </svg>
 
-                    </div>
+ 
+
+                    
                     <span className="font-medium text-gray-900">Star Force</span>
                   </div>
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.4067 24H2.59333C1.16109 24 0 22.8389 0 21.4067V2.59333C0 1.16109 1.16109 0 2.59333 0H21.4066C22.8389 0 24 1.16109 24 2.59333V21.4066C24 22.8389 22.8389 24 21.4067 24Z" fill="#3D3C52"/>
-<path d="M6.7434 4.85165H17.2286C18.2606 4.85165 19.1027 5.68964 19.1027 6.72573V17.2115C19.1027 18.2435 18.2647 19.085 17.2286 19.085H6.7434C5.71148 19.085 4.86932 18.2476 4.86932 17.2115V6.72095C4.86932 5.68964 5.7067 4.85165 6.7434 4.85165Z" fill="#3D3C52"/>
-<path d="M13.4692 8.02911V7.54101C13.4689 7.19992 13.1923 6.92359 12.8512 6.92363H11.4107C11.0696 6.92359 10.793 7.19992 10.7927 7.54101V8.04212C10.7927 8.09789 10.8443 8.13703 10.9007 8.12396C11.3082 8.0063 11.7302 7.9468 12.1544 7.94722C12.5635 7.94736 12.9708 8.00241 13.3654 8.1109C13.3778 8.11405 13.3907 8.1143 13.4032 8.11165C13.4157 8.10899 13.4274 8.1035 13.4374 8.0956C13.4475 8.08769 13.4556 8.07758 13.4611 8.06605C13.4666 8.05452 13.4694 8.04188 13.4692 8.02911ZM9.52124 8.66783L9.27511 8.42169C9.03408 8.18048 8.64308 8.18034 8.40186 8.42137L8.10736 8.71526C7.86647 8.9547 7.86526 9.3441 8.1047 9.58499L8.10736 9.58766L8.34933 9.82962C8.38847 9.86816 8.4448 9.85926 8.47921 9.82073C8.62196 9.62467 8.77959 9.43989 8.95069 9.26802C9.12322 9.09488 9.30967 8.9362 9.50818 8.79359C9.55139 8.76746 9.55565 8.70697 9.52124 8.66783ZM12.1502 10.2175V12.3287C12.1502 12.3892 12.2154 12.4325 12.2711 12.4023L14.1482 11.4309C14.1909 11.4095 14.2039 11.3573 14.1826 11.3146C13.7935 10.632 13.0712 10.1659 12.2368 10.1356C12.1935 10.1356 12.1502 10.1701 12.1502 10.2175ZM12.1502 15.3036C10.5851 15.3036 9.31355 14.0338 9.31355 12.4711C9.31355 10.9084 10.585 9.6393 12.1502 9.6393C13.7158 9.6393 14.9868 10.9085 14.9868 12.4711C14.9868 14.0338 13.7201 15.3036 12.1502 15.3036ZM12.1502 8.44782C9.92736 8.44782 8.1245 10.2483 8.1245 12.4711C8.1245 14.6945 9.92741 16.4909 12.1502 16.4909C14.3729 16.4909 16.1758 14.6904 16.1758 12.467C16.1758 10.2436 14.3771 8.44782 12.1502 8.44782Z" fill="white"/>
-</svg>
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    </svg>
+  
 
                   </div>
                 </div>
@@ -122,20 +122,32 @@ const Index = () => {
               </div>
 
               {/* Black App Connection - Orange */}
-              <div className="bg-white border-2 border-orange-300 rounded-lg sm-12 p-4">
+              <div className="bg-white border-2 border-green-300 rounded-lg sm-12 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center">
-                      <div className="w-4 h-4 bg-white rounded-full"></div>
-                    </div>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2312_756)">
+<path d="M21.4067 24H2.59333C1.16109 24 0 22.8389 0 21.4067V2.59333C0 1.16109 1.16109 0 2.59333 0H21.4066C22.8389 0 24 1.16109 24 2.59333V21.4066C24 22.8389 22.8389 24 21.4067 24Z" fill="#3D3C52"/>
+<path d="M6.7434 4.85165H17.2286C18.2606 4.85165 19.1027 5.68964 19.1027 6.72573V17.2115C19.1027 18.2435 18.2647 19.085 17.2286 19.085H6.7434C5.71148 19.085 4.86932 18.2476 4.86932 17.2115V6.72095C4.86932 5.68964 5.7067 4.85165 6.7434 4.85165Z" fill="#3D3C52"/>
+<path d="M13.4692 8.02911V7.54101C13.4689 7.19992 13.1923 6.92359 12.8512 6.92363H11.4107C11.0696 6.92359 10.793 7.19992 10.7927 7.54101V8.04212C10.7927 8.09789 10.8443 8.13703 10.9007 8.12396C11.3082 8.0063 11.7302 7.9468 12.1544 7.94722C12.5635 7.94736 12.9708 8.00241 13.3654 8.1109C13.3778 8.11405 13.3907 8.1143 13.4032 8.11165C13.4157 8.10899 13.4274 8.1035 13.4374 8.0956C13.4475 8.08769 13.4556 8.07758 13.4611 8.06605C13.4666 8.05452 13.4694 8.04188 13.4692 8.02911ZM9.52124 8.66783L9.27511 8.42169C9.03408 8.18048 8.64308 8.18034 8.40186 8.42137L8.10736 8.71526C7.86647 8.9547 7.86526 9.3441 8.1047 9.58499L8.10736 9.58766L8.34933 9.82962C8.38847 9.86816 8.4448 9.85926 8.47921 9.82073C8.62196 9.62467 8.77959 9.43989 8.95069 9.26802C9.12322 9.09488 9.30967 8.9362 9.50818 8.79359C9.55139 8.76746 9.55565 8.70697 9.52124 8.66783ZM12.1502 10.2175V12.3287C12.1502 12.3892 12.2154 12.4325 12.2711 12.4023L14.1482 11.4309C14.1909 11.4095 14.2039 11.3573 14.1826 11.3146C13.7935 10.632 13.0712 10.1659 12.2368 10.1356C12.1935 10.1356 12.1502 10.1701 12.1502 10.2175ZM12.1502 15.3036C10.5851 15.3036 9.31355 14.0338 9.31355 12.4711C9.31355 10.9084 10.585 9.6393 12.1502 9.6393C13.7158 9.6393 14.9868 10.9085 14.9868 12.4711C14.9868 14.0338 13.7201 15.3036 12.1502 15.3036ZM12.1502 8.44782C9.92736 8.44782 8.1245 10.2483 8.1245 12.4711C8.1245 14.6945 9.92741 16.4909 12.1502 16.4909C14.3729 16.4909 16.1758 14.6904 16.1758 12.467C16.1758 10.2436 14.3771 8.44782 12.1502 8.44782Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2312_756">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
                     <span className="font-medium text-gray-900">Black App</span>
                   </div>
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
+                  
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.3936 1.57366C8.54447 -0.445832 11.4556 -0.445832 12.6065 1.57365L19.4115 13.5146C20.5513 15.5146 19.107 18 16.805 18H3.19509C0.893178 18 -0.551107 15.5146 0.588634 13.5146L7.3936 1.57366ZM10 11C10.5523 11 11 10.5523 11 9.99999V5C11 4.44772 10.5523 4 10 4C9.44773 4 9.00002 4.44772 9.00002 5V9.99999C9.00002 10.5523 9.44773 11 10 11ZM10 15C10.5523 15 11 14.5523 11 14C11 13.4477 10.5523 13 10 13C9.44773 13 9.00002 13.4477 9.00002 14C9.00002 14.5523 9.44773 15 10 15Z" fill="#F8A74C"/>
+</svg>
+
                   </div>
-                </div>
+               
                 <div className="border-t border-orange-200 pt-3">
                   <button className="text-orange-600 text-sm font-medium hover:text-orange-700">
                     View Connection
@@ -224,7 +236,7 @@ const Index = () => {
       {/* Empty first card */}
   </ProductCard>
   <div className="w-70 h-24 rounded-lg overflow-hidden"> {/* Remove background color wrapper */}
-      <img src="/hover.png" alt="Product" className="w-full h-full object-cover" />
+      <img src="/images/hover.png" alt="Product" className="w-full h-full object-cover" />
   </div>
   <ProductCard color="bg-[#FF1FA9]" className="w-full">
       {/* Empty third card */}
@@ -243,7 +255,7 @@ const Index = () => {
       {/* Empty first card */}
   </ProductCard>
   <div className="w-70 h-24 rounded-lg overflow-hidden"> {/* Remove background color wrapper */}
-      <img src="/hover.png" alt="Product" className="w-full h-full object-cover" />
+      <img src="/images/hover.png" alt="Product" className="w-full h-full object-cover" />
   </div>
   <ProductCard color="bg-[#FF1FA9]">
       {/* Empty third card */}
@@ -263,7 +275,7 @@ const Index = () => {
     {/* Mobile: Image above text (centered) */}
     <div className="md:hidden flex justify-center w-full">
       <img 
-        src="/Chatbot.png" 
+        src="/images/Chatbot.png" 
         alt=""
         className="w-40 h-40 object-contain"
       />
@@ -273,7 +285,7 @@ const Index = () => {
     
     <div className="hidden md:block flex-shrink-0">
       <img 
-        src="/Chatbot.png" 
+        src="/images/Chatbot.png" 
         alt="Chatbot Configuration"
         className="w-48 h-48 object-contain"
       />
