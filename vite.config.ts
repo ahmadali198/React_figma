@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/',
   server: {
     host: "::",
     port: 8080,
@@ -16,22 +17,14 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      // "@images": path.resolve(__dirname, "./public"), // Alias for public assets
     },
   },
   build: {
-    outDir: 'dist', // Standard output directory for production builds
-    sourcemap: false, // Generally not needed for end-users, can be enabled if you need to debug production issues
+    outDir: 'dist',
+    sourcemap: false,
     rollupOptions: {
-      // You can configure manual chunks here if you want more control over splitting
-      // output: {
-      //   manualChunks: (id) => {
-      //     if (id.includes('node_modules')) {
-      //       return 'vendor';
-      //     }
-      //   },
-      // },
+      // Configure manual chunks if needed
     },
-    // Optional: Adjust chunk size warning limit if you are aware of the sizes
-    // chunkSizeWarningLimit: 750,
   },
 }));
