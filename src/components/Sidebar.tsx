@@ -1,27 +1,48 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X, AppWindow, Instagram, Layers } from "lucide-react"; // Optional Lucide icons
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = {
     top: [
-      { icon: '/icons/Home.svg', label: 'Dashboard', key: 'home' },
-      { icon: '/icons/Connections.svg', label: 'Connections', key: 'connections' },
-      { icon: '/icons/Apps.svg', label: 'Apps', key: 'apps' },
-      { icon: '/icons/Instagram.svg', label: 'Instagram', key: 'instagram' },
-      { icon: '/icons/Stack.svg', label: 'Stack', key: 'Stack' },
+      // Option 1: SVG file
+      { icon: "/icons/Home.svg", label: "Dashboard", key: "home" },
+      {
+        icon: "/icons/Connections.svg",
+        label: "Connections",
+        key: "connections",
+      },
+
+      // Option 2: Lucide components
+      { icon: <AppWindow size={26} />, label: "Apps", key: "apps" },
+      { icon: <Instagram size={26} />, label: "Instagram", key: "instagram" },
+      { icon: <Layers size={26} />, label: "Stack", key: "stack" },
     ],
     bottom: [
-      { icon: '/icons/right-arrow.svg', label: 'Right Arrow', key: 'right-arrow' },
-      { icon: '/icons/settings.svg', label: 'Settings', key: 'settings' },
-      { icon: '/icons/switch.svg', label: 'switch', key: 'settings' },
-    ]
+      {
+        icon: "/icons/right-arrow.svg",
+        label: "Right Arrow",
+        key: "right-arrow",
+      },
+      { icon: "/icons/settings.svg", label: "Settings", key: "settings" },
+      { icon: "/icons/switch.svg", label: "Switch", key: "switch" },
+    ],
   };
 
   const renderMenuItems = (items) =>
     items.map((item) => (
       <div key={item.key} className="p-2 flex items-center justify-center">
-        <img src={item.icon} alt={item.label} className="h-5 w-5 object-contain" />
+        {typeof item.icon === "string" ? (
+          <img
+            src={item.icon}
+            alt={item.label}
+            className="h-8 w-8 object-contain"
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+          />
+        ) : (
+          item.icon // Lucide or JSX icon component
+        )}
       </div>
     ));
 
@@ -38,13 +59,17 @@ const Sidebar = () => {
       {/* Mobile Sidebar */}
       <div
         className={`md:hidden fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 z-40 transition-transform duration-300 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
+          isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="flex flex-col items-center py-4 h-full">
           {/* Logo */}
           <div className="mb-8 px-2">
-            <img src="/images/Feelix.png" alt="Feelix Logo" className="h-8 w-auto" />
+            <img
+              src="/images/Feelix.png"
+              alt="Feelix Logo"
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Top Menu */}
@@ -64,7 +89,11 @@ const Sidebar = () => {
         <div className="flex flex-col items-center py-4 h-full">
           {/* Logo */}
           <div className="mb-8 px-2">
-            <img src="/images/Feelix.png" alt="Feelix Logo" className="h-8 w-auto" />
+            <img
+              src="/images/Feelix.png"
+              alt="Feelix Logo"
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Top Menu */}
